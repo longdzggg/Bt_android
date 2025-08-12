@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:padding="16dp">
+
+    <TableRow>
+        <TextView
+            android:text="Chương trình tính chỉ số BMI"
+            android:layout_span="2"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Nhập Tên:" />
+        <EditText android:id="@+id/editTen" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Chiều Cao:" />
+        <EditText android:id="@+id/editChieuCao" android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Cân Nặng:" />
+        <EditText android:id="@+id/editCanNang" android:inputType="numberDecimal"/>
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnTinhBMI"
+            android:text="Tính BMI"
+            android:layout_span="2" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="BMI = " />
+        <EditText android:id="@+id/editBMI" android:enabled="false"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="Chuẩn đoán:" />
+        <EditText android:id="@+id/editChuanDoan" android:enabled="false"/>
+    </TableRow>
+</TableLayout>
